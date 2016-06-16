@@ -4,10 +4,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1111/eureka/
----
-spring:
-  profiles: cloud
-eureka:
   instance:
-    hostname: ${vcap.application.uris[0]}
-    non-secure-port: 80
+    instance-id: applicationname:${spring.application.instance_id:${random.value}}
