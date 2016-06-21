@@ -5,6 +5,5 @@ eureka:
 zuul:
   routes:
     app-service: /app/**
-    appB-service: /appB/**
 server:
   port: 8080
