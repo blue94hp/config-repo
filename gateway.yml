@@ -6,5 +6,7 @@ zuul:
   routes:
     app-service:
       path: /app/**
+    appB-service:
+      path: /app/**
 server:
   port: 8080
