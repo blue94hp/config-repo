@@ -4,6 +4,7 @@ eureka:
       defaultZone: http://localhost:1111/eureka/
 zuul:
   routes:
-    appB-service: /app/**
+    app-service: /app/**
+    appB-service: /appB/**
 server:
   port: 8080
